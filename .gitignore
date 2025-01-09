@@ -1,0 +1,73 @@
+# .NET Core-specific
+bin/
+obj/
+*.swp
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider project files
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Mac specific
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Configuration files
+secrets.json
+
+# Environment settings
+.env
+
+# NPM / Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+wwwroot/
+dist/
+publish/
+packages/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# JetBrains Rider
+.idea/
+.idea_modules/
+
+# Azure
+*.azureFunctions/
+*.azurewebjobs/
+
+# Docker
+docker-compose.override.yml
+docker-compose.override.*.yml
+*.dockerignore
+
+# Resharper
+_ReSharper/
+*.DotSettings.user
+
+# Coverlet Coverage Output
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# Visual Studio 
+.vs/
