@@ -20,7 +20,7 @@ namespace AzureManagementAPI.Controllers
             _azureStorageAccount = azureStorageAccount;
         }
 
-        [HttpPost("AddResourceGroup")]
+        [HttpPost("CreateResourceGroup")]
         public async Task<IActionResult> AddResourceGroup(string resourceGroupName, string region)
         {
             try
@@ -41,7 +41,7 @@ namespace AzureManagementAPI.Controllers
             return Ok("SQL Server Successfully Created.");
         }
 
-        [HttpPost("AddStorageAccount")]
+        [HttpPost("CreateStorageAccount")]
         public async Task<IActionResult> AddStorageAccount(string storageAccountName, string resourceGroupName, string region)
         {
             string connectionString = await _azureStorageAccount.CreateStorageAccountAsync(storageAccountName, resourceGroupName, region);
